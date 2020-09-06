@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menus | Adam's</title>
+<link rel="stylesheet" href="menumain.css" type="text/css" />
+</head>
+<body style="background-color:#011839;">
+<header>
+71th STREET NW, WASHINGTON,DC 20009 (202)518-792
+</header>
+<ul>
+  <li><a class="order" href="order.html">Order Now</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="menu1.html">Menus</a></li>
+  <li><a href="Adam's.html">Home</a></li>
+  <li style="float:left"><a class="name" href="#about">Adam's</a></li>
+</ul>
+<div><img class="mySlides" src="im3.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im5.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im7.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im4.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im1.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im6.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im2.jpg" style="width:900px;height:500px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel,2000); // Change image every 2 seconds
+}
+</script>
+<ul id="menu">
+  <li><a href="menu1.html">CHEF'S COUNTER</a></li>
+  <li><a href="menu2.html">COCKTAIL & WINE LIST</a></li>
+  <li><a href="menu3.html">SUNDAY LUNCH</a></li>
+  <li><a class="active">RESTAURANT WEEK</a></li>
+<p class="food"><br><br><br><br><b>Labor Day Cookout Kit</b><br><br>
+
+$105 serves 2-4<br><br><br><br>
+
+
+
+<u>For The Grill</u><br><br>
+
+12 Smoked Baby Back Ribs<br><br>
+
+bbq sauce<br><br>
+
+2 Burger Patties - (6 oz each)<br><br>
+
+sliced onion, heirloom tomato, aged cheddar, garlic aioli, b&b pickles, house buns<br><br>
+
+2 House Smoked Hot Dogs - (4 oz each)<br><br>
+
+house made hot dog buns, pickled peppers, mustard aioli, sweet relish<br><br><br><br>
+
+
+
+<u>Sides</u><br><br>
+
+Mac & Cheese Tray<br><br>
+
+Baked Beans<br><br>
+
+Mini Cornbread Loaves<br><br>
+
+whipped honey butter<br><br>
+
+Greens Salad<br><br>
+
+toasted sunflower seeds, grilled peach, cherry tomatoes, red wine vinaigrette<br><br><br><br>
+
+
+
+<u>Dessert</u><br><br>
+
+Berries & Cream<br><br>
+
+shortcake - vanilla pudding - mascarpone<br><br><br><br>
+
+
+</p>
+</ul>
+<div class="footer">
+<p>Powered by BentoBox</p>
+</div>
+</body>
+</html>

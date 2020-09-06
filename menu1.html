@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menus | Adam's</title>
+<link rel="stylesheet" href="menumain.css" type="text/css" />
+</head>
+<body style="background-color:#011839;">
+<header>
+71th STREET NW, WASHINGTON,DC 20009 (202)518-792
+</header>
+<ul>
+  <li><a class="order" href="order.html">Order Now</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="menu1.html">Menus</a></li>
+  <li><a href="Adam's.html">Home</a></li>
+  <li style="float:left"><a class="name" href="#about">Adam's</a></li>
+</ul>
+
+<div><img class="mySlides" src="im3.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im5.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im7.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im4.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im1.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im6.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im2.jpg" style="width:900px;height:500px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel,2000); // Change image every 2 seconds
+}
+</script>
+<ul id="menu">
+  <li><a class="active">CHEF'S COUNTER</a></li>
+  <li><a href="menu2.html">COCKTAIL & WINE LIST</a></li>
+  <li><a href="menu3.html">SUNDAY LUNCH</a></li>
+  <li><a href="menu4.html">RESTAURANT WEEK</a></li>
+<p class="food"><br><br><br><br><b>Tasting Menu</b><br><br><br>
+
+$75 per person - August<br><br><br>
+
+
+
+Courgette Tart<br><br>
+
+rye - creme fraîche - blossom mustard<br><br>
+
+King Crab<br><br>
+
+black truffle - corn<br><br>
+
+-------<br><br>
+
+Tomato<br><br>
+
+verbena - fresh cheese - raspberry<br><br>
+
+------<br><br>
+
+Embered Foie Gras <br><br>
+
+tuna belly - duck broth - green peppercorns <br><br>
+
+------<br><br>
+
+Dry Aged Rohan Duck à la Presse<br><br>
+
+fig & yuzu - sauce à la royale - marigold <br><br>
+
+<supplement: $40 per person | whole party must participate> <br><br>
+
+-------<br><br>
+
+Grape <br><br>
+
+coconut - sauternes - buckwheat <br><br>
+
+------<br><br>
+
+Peaches & Cream<br><br>
+
+plum wine - tonka bean - white chocolate<br><br><br><br>
+
+
+
+-------<br><br>
+
+<b>Tasting Menu</b><br><br>
+
+$115 per person - September <br><br><br><br>
+
+
+
+Courgette Tart<br><br>
+
+creme fraîche - blossom mustard<br><br>
+
+King Crab & Black Truffle<br><br>
+
+maitake mushroom - meyer lemon<br><br>
+
+Hokkaido Sea Urchin <br><br>
+
+koji - guanciale<br><br>
+
+-------<br><br>
+
+Tomato<br><br>
+
+verbena - fresh cheese - raspberry<br><br>
+
+------<br><br>
+
+Spanish Turbot<br><br>
+
+almond - kaluga caviar - matsutake<br><br>
+
+------<br><br>
+
+Habanada Pepper<br><br>
+
+lemon thyme<br><br>
+
+------<br><br>
+
+Dry Aged Rohan Duck à la Presse<br><br>
+
+fig - yuzu - sauce à la royale <br><br>
+
+<supplement: $35 per person | whole party must participate> <br><br>
+
+-------<br><br>
+
+Grape <br><br>
+
+coconut - sauternes - buckwheat <br><br>
+
+------<br><br>
+
+Peaches & Cream<br><br><br>
+
+honey truffle - tonka bean - white chocolate</p>
+</ul>
+<div class="footer">
+<p>Powered by BentoBox</p>
+</div>
+</body>
+</html>

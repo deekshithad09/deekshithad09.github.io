@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menus | Adam's</title>
+<link rel="stylesheet" href="menumain.css" type="text/css" />
+</head>
+<body style="background-color:#011839;">
+<header>
+71th STREET NW, WASHINGTON,DC 20009 (202)518-792
+</header>
+<ul>
+  <li><a class="order" href="order.html">Order Now</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="menu1.html">Menus</a></li>
+  <li><a href="Adam's.html">Home</a></li>
+  <li style="float:left"><a class="name" href="#about">Adam's</a></li>
+</ul>
+<div><img class="mySlides" src="im3.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im5.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im7.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im4.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im1.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im6.jpg" style="width:900px;height:500px">
+  <img class="mySlides" src="im2.jpg" style="width:900px;height:500px">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel,2000); // Change image every 2 seconds
+}
+</script>
+<ul id="menu">
+  <li><a href="menu1.html">CHEF'S COUNTER</a></li>
+  <li><a href="menu2.html">COCKTAIL & WINE LIST</a></li>
+  <li><a class="active">SUNDAY LUNCH</a></li>
+  <li><a href="menu4.html">RESTAURANT WEEK</a></li>
+<p class="food"><br><br><br><br><b>Sunday Lunch Menu</b><br><br>
+
+$65 per person<br><br>
+
+À La Carte options available in The Salon<br><br><br><br>
+
+
+
+<u>Canapés</u><br><br>
+
+Courgette - rye - creme fraîche - blossom mustard<br><br>
+
+King Crab - black truffle - maitake - meyer lemon<br><br>
+
+Edwards Farm Country Ham - butter - mustard - peach jam <br><br>
+
+Guanciale - 'donut'<br><br>
+
+------<br><br>
+
+<u>Starter</u><br><br>
+
+Tomato <br><br>
+
+verbena - fresh cheese - raspberry<br><br>
+
+------<br><br>
+
+Ossetra Caviar <br><br>
+
+soft scrambled egg - brioche - pickled onion <br><br>
+
+<supplement $45 per person><br><br>
+
+------<br><br>
+
+<u>Main Course</u><br><br>
+
+(one choice per party)<br><br>
+
+Spanish Turbot<br><br>
+
+almond - matsutake<br><br>
+
+or <br><br>
+
+Brioche Stuffed Chicken <br><br>
+
+leek - apple - foie gras<br><br>
+
+or <br><br>
+
+Homard à la Presse <br><br>
+
+sauce américaine, leek - apple<br><br>
+
+<supplement $25 per person><br><br>
+
+------<br><br>
+
+<u>Dessert</u><br><br>
+Apple Tatin <br><br>                                                           
+
+canelé - honey truffle - cider<br><br><br><br>
+
+
+</p>
+</ul>
+<div class="footer">
+<p>Powered by BentoBox</p>
+</div>
+</body>
+</html>

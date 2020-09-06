@@ -1,0 +1,99 @@
+header {
+  background-color:#011839;
+  padding: 10px;
+width:100%;
+letter-spacing:1px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+font-weight: 500;
+  font-family: "Circular Book";
+}
+
+ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 10px;
+  overflow: hidden;
+  background-color: rgb(241, 168, 28); 
+}
+
+li {
+   width:10%;
+  float: right;
+}
+
+li a {
+ 
+  display: block;
+  color: #011839;
+font-family: "Circular Book";
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-size:25px;
+}
+
+li a:hover:not(.name) {
+  background-color: #011839;
+  color:white;
+}
+
+.name{
+font-family: "Circular Book";
+  color:  #011839;
+  text-shadow: 2px 2px 4px white;
+font-size:50px;
+letter-spacing:10px;
+font-weight: 700;
+}
+
+.order
+{
+border-style:solid;
+background-color:#011839;
+color:rgb(241, 168, 28)
+}
+.contain
+{
+position: relative;
+text-align: center;
+color: white;
+}
+.center
+{
+position: absolute;
+font-size:100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+.About
+{list-style-type: none;
+  margin:0px 100px 0px 100px;
+  padding: 0px 100px 0px 100px;
+  overflow: hidden;
+  background-color:white;
+}
+.team
+{
+list-style-type: none;
+  margin:0px 100px 0px 100px;
+  padding: 20px 100px 100px 100px;
+  overflow: hidden;
+  background-color:white;
+  color: #011839;
+  text-shadow: 2px 2px 4px rgb(241, 168, 28);
+}
+.footer {
+position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(241, 168, 28);
+  color: #011839;
+  text-align: center;
+letter-spacing:1px;}

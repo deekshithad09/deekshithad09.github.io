@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Now | Adam's</title>
+<link rel="stylesheet" href="head.css" type="text/css" />
+<script>
+function validate()
+{
+var phoneno = /^\d{10}$/;
+if(f1.p1.value.trim()!="")
+ { 
+if(f1.p1.value.match(phoneno))
+       return true;
+else
+{
+alert("Invalid Phone Number");
+return false;
+}
+}
+}
+</script>
+<style>
+body
+{
+background-image:url("dining.jpg");
+background-size:cover;
+margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+text-align:center;
+}.glow {
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+form
+{
+display:inline-block;
+font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:#011839;">
+<header>
+71th STREET NW, WASHINGTON,DC 20009 (202)518-792
+</header>
+<ul>
+  <li><a class="order" href="order.html">Order Now</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="menu1.html">Menus</a></li>
+  <li><a href="Adam's.html">Home</a></li>
+  <li style="float:left"><a class="name" href="#about">Adam's</a></li>
+</ul>
+<br>
+<form class="glow" name="f1" action="booking.html" onsubmit="return validate()"><br><br><br><br><br><br>
+FULL NAME*: <input type="text" name="t1" required><br><br>
+PHONE NUMBER: <input type="tel" name="p1"><br><br>
+EMAIL: <input type="email" name="e1"><br><br>
+DATE*: <input type="date" required><br><br>
+TIME*: <input type="time" required><br><br>
+NO OF GUESTS: <input type="number" min="1" max="8" required><br><br>
+SELECT TABLE: <select name="s1" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select><br><br>
+IF ANY SUGGESTIONS:<br>
+<textarea name="ta1" rows="5" cols="40"></textarea><br>
+<input style="font-size:20px" type="submit" value="RESERVE A TABLE"><br><br>
+<br><br><br><br><br><br><br><br><br>
+</form>
+<div class="footer">
+<p>Powered by BentoBox</p>
+</div>
+
+
+
